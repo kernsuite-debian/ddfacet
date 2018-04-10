@@ -1,0 +1,29 @@
+Source: ddfacet
+Section: science
+Priority: extra
+Maintainer: Debian Astro Team <debian-astro-maintainers@lists.alioth.debian.org>
+Build-Depends: cmake,
+               g++,
+               gcc,
+               gfortran,
+               dpkg-dev,
+               libc-dev,
+               debhelper (>=9),
+               python-setuptools,
+               dh-python,
+               python-all,
+               python-numpy,
+               cython,
+               python-dev,
+               pkg-config,
+               make
+Standards-Version: 3.9.8
+Homepage: https://github.com/saopicc/DDFacet
+X-Python-Version: >= 2.6
+
+Package: ddfacet
+Architecture: any
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${shlibs:Depends}, ${python:Depends}
+Description: A facet-based radio imaging package.
+
