@@ -1,0 +1,54 @@
+Source: ddfacet
+Section: science
+Priority: extra
+Maintainer: Debian Astro Team <debian-astro-maintainers@lists.alioth.debian.org>
+Build-Depends: cmake,
+               gfortran,
+               python-setuptools,
+               dh-python,
+               python-all,
+               python-dev,
+               pkg-config,
+               debhelper (>=9),
+               python-nose (>=1.3.7),
+               cython (>=0.25.2),
+               python-numpy (>=1.11.0),
+               python-sharedarray (>=2.0.2),
+               polygon2 (>=2.0.8),
+               python-pyfftw (>=0.10.4),
+               python-astropy (>=1.3.3),
+               python-deap (>=1.0.1),
+               python-ipdb (>=0.10.3),
+               python-casacore (>=2.1.0),
+               python-ephem (>=3.7.6.0),
+               python-numexpr (>=2.6.2),
+               python-matplotlib (>=2.0.0),
+               python-scipy (>=0.16.0),
+               python-astro-kittens (>=0.3.3),
+               python-meqtrees-cattery (>=1.5.1),
+               python-owlcat (>=1.4.2),
+               python-astlib (>=0.8.0),
+               python-psutil (>=5.2.2),
+               py-cpuinfo (>=3.2.0),
+               python-tables (>=3.3.0),
+               python-prettytable (>=0.7.2),
+               casacore-data,
+               curl,
+               krb5-locales,
+               libarchive-cpio-perl,
+               libltdl-dev,
+               libmail-sendmail-perl,
+               libsasl2-modules,
+               publicsuffix,
+               wget 
+Standards-Version: 3.9.8
+Homepage: https://github.com/saopicc/DDFacet
+X-Python-Version: >= 2.6
+
+Package: ddfacet
+Architecture: any
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${shlibs:Depends}, ${python:Depends}
+Description: A facet-based radio imaging package.
+ A wide-band wide-field spectral deconvolution framework (DDFacet) based on
+ image plane faceting, that takes into account generic direction-dependent effects.
